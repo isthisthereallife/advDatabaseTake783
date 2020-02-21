@@ -2,6 +2,9 @@ package com.company;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 
@@ -13,6 +16,8 @@ public class Book {
     String genre;
     String year;
     Path path = Paths.get("books/");
+    LocalDateTime dateTimeCreated;
+    LocalDateTime dateTimeAccessed;
 
 
     Book() {
@@ -23,6 +28,8 @@ public class Book {
         this.genre = "no genre";
         this.year = "no year";
         this.path = Paths.get(path.toString() + "/" + this.bookID + ".txt");
+        this.dateTimeCreated = LocalDateTime.now();
+        this.dateTimeAccessed = LocalDateTime.now();
     }
 
     Book(List<String> s) {
@@ -33,6 +40,8 @@ public class Book {
         this.genre = s.get(4).substring(5).trim();
         this.year = s.get(5).substring(4).trim();
         this.path = Paths.get(path.toString() + "/" + this.bookID + ".txt");
+        this.dateTimeCreated = LocalDateTime.parse(s.get(7).substring(7).trim());
+        this.dateTimeAccessed = LocalDateTime.now();
     }
 
 
@@ -44,6 +53,8 @@ public class Book {
         this.genre = genre;
         this.year = year;
         this.path = Paths.get(path.toString() + "/" + this.bookID + ".txt");
+        this.dateTimeCreated = LocalDateTime.now();
+        this.dateTimeAccessed = LocalDateTime.now();
     }
 
     public String getBookID() {
@@ -97,7 +108,7 @@ public class Book {
 
     public String toString() {
         return "bookID " + bookID + "\nISBN " + ISBN + "\ntitle " + title +
-                "\nauthorID " + authorID + "\ngenre " + genre + "\nyear " + year + "\npath " + path;
+                "\nauthorID " + authorID + "\ngenre " + genre + "\nyear " + year + "\npath " + path+"\ncreated "+dateTimeCreated.toString()+"\naccessed "+dateTimeAccessed.toString();
     }
 
 }

@@ -29,7 +29,7 @@ public class Library {
             System.out.println("Same same: " + b.ISBN + " == " + d.ISBN);
             save(d, d.path);
         }
-
+        System.out.println(d.toString());
         Author a1 = new Author();
         save(a1, a1.path);
         Author a2 = (Author) findOne("firstName", "first", authorPath);
