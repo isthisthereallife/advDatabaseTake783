@@ -2,8 +2,10 @@ package com.company;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Type;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -42,29 +44,43 @@ public class Library {
     }
 
     public Object findOne(String key, String val, Path path) {
+        Type type = null;
+        Object n = null;
+        Method meth = null;
         for (File f : Database.getFilesFromPath(path)) {
             ArrayList<String> a = (ArrayList<String>) Database.makeListFromTxt(f.toPath());
+            for (Field field : Book.class.getDeclaredFields()) {
+                if (field.getName().equals(key)) {
+                    type = Book.class;
+                    break;
+                }
+            }
+            if (type == null) {
+                for (Field field : Author.class.getDeclaredFields()) {
+                    if (field.getName().equals(key)) {
+                        type = Author.class;
+                        break;
+                    }
+                }
+            }
             try {
-                Book.class.getDeclaredField(key);
-                String makeGetter = "get".concat(Book.class.getDeclaredField(key).getName().substring(0, 1).toUpperCase() + Book.class.getDeclaredField(key).getName().substring(1));
-                Method meth = Book.class.getDeclaredMethod(makeGetter);
-                Book n = new Book(a);
+                if (type == Book.class) {
+                    Book.class.getDeclaredField(key);
+                    String makeGetter = "get".concat(Book.class.getDeclaredField(key).getName().substring(0, 1).toUpperCase() + Book.class.getDeclaredField(key).getName().substring(1));
+                    meth = Book.class.getDeclaredMethod(makeGetter);
+                    n = new Book(a);
+                } else if (type == Author.class) {
+                    Author.class.getDeclaredField(key);
+                    String makeGetter = "get".concat(Author.class.getDeclaredField(key).getName().substring(0, 1).toUpperCase() + Author.class.getDeclaredField(key).getName().substring(1));
+                    meth = Author.class.getDeclaredMethod(makeGetter);
+                    n = new Author(a);
+                }
+
                 if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
                     return n;
                 }
             } catch (NoSuchFieldException | NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
-                //if we reach this place, we're probably not looking at a book
-                try {
-                    Author.class.getDeclaredField(key);
-                    String makeGetter = "get".concat(Author.class.getDeclaredField(key).getName().substring(0, 1).toUpperCase() + Author.class.getDeclaredField(key).getName().substring(1));
-                    Method meth = Author.class.getDeclaredMethod(makeGetter);
-                    Author n = new Author(a);
-                    if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
-                        return n;
-                    }//practice
-                } catch (NoSuchFieldException | NoSuchMethodException | InvocationTargetException | IllegalAccessException ignored) {
-
-                }
+                e.printStackTrace();
             }
         }
         System.out.println("Search inconclusive");
