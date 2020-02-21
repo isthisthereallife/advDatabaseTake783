@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="fml" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y6Wo5MeH8UVsQ30d7xt1l9FOrB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="advDatabaseTake5" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="" />
+      <created>1582263695727</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582263695727</updated>
+    </task>
+    <task id="LOCAL-00001" summary="fml">
+      <created>1582277448039</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582277448039</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fml">
+      <created>1582279014870</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582279014870</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fml" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582279202193">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582279202193" />
+    <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1582276351576">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582276351576" />
+    <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar" timestamp="1582271038255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar/0.0.1920.1040@0.0.1920.1040" timestamp="1582271038255" />
+    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582279240386">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582279240386" />
+    <state x="345" y="266" key="FileChooserDialogImpl" timestamp="1582270054311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="345" y="266" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582270054311" />
+    <state x="807" y="397" width="329" height="245" key="Github.ShareDialog" timestamp="1582279119569">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="397" width="329" height="245" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582279119569" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1582278782744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582278782744" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1582278782744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582278782744" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1582278782744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582278782744" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1582278782744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582278782744" />
+    <state x="653" y="232" key="RollbackChangesDialog" timestamp="1582278989122">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="653" y="232" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582278989122" />
+    <state x="552" y="242" key="Vcs.Push.Dialog.v2" timestamp="1582279019596">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582279019596" />
+    <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582273459401">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582273459401" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582279046252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582279046252" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1582274744533">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582274744533" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582264315284">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582264315284" />
+  </component>
+</project>
