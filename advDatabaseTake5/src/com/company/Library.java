@@ -61,8 +61,8 @@ public class Library {
                     Author n = new Author(a);
                     if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
                         return n;
-                    }//practice 
-                } catch (NoSuchFieldException | NoSuchMethodException | InvocationTargetException | IllegalAccessException er) {
+                    }//practice
+                } catch (NoSuchFieldException | NoSuchMethodException | InvocationTargetException | IllegalAccessException ignored) {
 
                 }
             }
