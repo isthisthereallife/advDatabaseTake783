@@ -1,6 +1,7 @@
 package com.company;
 
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
 
@@ -11,39 +12,38 @@ public class Book {
     String authorID;
     String genre;
     String year;
-    Path path = Path.of("books/");
+    Path path = Paths.get("books/");
 
 
-
-    Book(){
-        this.bookID = "testIDTEST";
-        this.ISBN= "testISBN";
-        this.title= "testtitle1";
-        this.authorID = "testAUthorId";
-        this.genre = "testGenre";
-        this.year = "testYear121";
-        this.path = Path.of(path.toString()+this.bookID+".txt");
+    Book() {
+        this.bookID = "no id";
+        this.ISBN = "no isbn";
+        this.title = "no title";
+        this.authorID = "no author";
+        this.genre = "no genre";
+        this.year = "no year";
+        this.path = Paths.get(path.toString() + "/" + this.bookID + ".txt");
     }
 
-    Book(List<String> s){
-        this.bookID =  s.get(0).substring(6).trim();
-        this.ISBN= s.get(1).substring(4).trim();
-        this.title= s.get(2).substring(5).trim();
+    Book(List<String> s) {
+        this.bookID = s.get(0).substring(6).trim();
+        this.ISBN = s.get(1).substring(4).trim();
+        this.title = s.get(2).substring(5).trim();
         this.authorID = s.get(3).substring(8).trim();
         this.genre = s.get(4).substring(5).trim();
         this.year = s.get(5).substring(4).trim();
-        this.path = Path.of(path.toString()+this.bookID+".txt");
+        this.path = Paths.get(path.toString() + "/" + this.bookID + ".txt");
     }
 
 
-    Book(String bookID, String ISBN, String title,String authorID, String genre, String year){
+    Book(String bookID, String ISBN, String title, String authorID, String genre, String year) {
         this.bookID = bookID;
-        this.ISBN= ISBN;
-        this.title= title;
+        this.ISBN = ISBN;
+        this.title = title;
         this.authorID = authorID;
         this.genre = genre;
         this.year = year;
-        this.path = Path.of(path.toString()+this.bookID+".txt");
+        this.path = Paths.get(path.toString() + "/" + this.bookID + ".txt");
     }
 
     public String getBookID() {
@@ -95,8 +95,8 @@ public class Book {
     }
 
 
-    public String toString(){
-        return "bookID "+bookID+"\nISBN "+ISBN+"\ntitle "+title+"\nauthorID "+authorID+"\ngenre "+genre+"\nyear "+year+"\npath "+path;
+    public String toString() {
+        return "bookID " + bookID + "\nISBN " + ISBN + "\ntitle " + title + "\nauthorID " + authorID + "\ngenre " + genre + "\nyear " + year + "\npath " + path;
     }
 
 }

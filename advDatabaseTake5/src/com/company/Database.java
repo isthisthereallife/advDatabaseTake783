@@ -9,10 +9,10 @@ import java.util.List;
 public class Database {
 
 
-
-    public static File[] getFilesFromPath(Path path){
+    public static File[] getFilesFromPath(Path path) {
         return path.toFile().listFiles();
     }
+
     public static void save(String stringToSave, Path path) {
         File file = new File(String.valueOf(path));
         try {
