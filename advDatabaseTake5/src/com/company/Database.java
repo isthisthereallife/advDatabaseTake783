@@ -39,4 +39,14 @@ public class Database {
         }
         return contents;
     }
+    public static void delete(Path path){
+        if(Files.exists(path)){
+            try {
+                Files.delete(path);
+                System.out.println("Deleted "+path);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }

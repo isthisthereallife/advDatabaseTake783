@@ -96,7 +96,8 @@ public class Book {
 
 
     public String toString() {
-        return "bookID " + bookID + "\nISBN " + ISBN + "\ntitle " + title + "\nauthorID " + authorID + "\ngenre " + genre + "\nyear " + year + "\npath " + path;
+        return "bookID " + bookID + "\nISBN " + ISBN + "\ntitle " + title +
+                "\nauthorID " + authorID + "\ngenre " + genre + "\nyear " + year + "\npath " + path;
     }
 
 }
