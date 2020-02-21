@@ -13,6 +13,8 @@ public class Book {
     String year;
     Path path = Path.of("books/");
 
+
+
     Book(){
         this.bookID = "testIDTEST";
         this.ISBN= "testISBN";
@@ -30,6 +32,17 @@ public class Book {
         this.authorID = s.get(3).substring(8).trim();
         this.genre = s.get(4).substring(5).trim();
         this.year = s.get(5).substring(4).trim();
+        this.path = Path.of(path.toString()+this.bookID+".txt");
+    }
+
+
+    Book(String bookID, String ISBN, String title,String authorID, String genre, String year){
+        this.bookID = bookID;
+        this.ISBN= ISBN;
+        this.title= title;
+        this.authorID = authorID;
+        this.genre = genre;
+        this.year = year;
         this.path = Path.of(path.toString()+this.bookID+".txt");
     }
 
