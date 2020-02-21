@@ -28,8 +28,6 @@ public class Library {
             save(d, d.path);
         }
 
-
-        
         Author a1 = new Author();
         save(a1, a1.path);
         Author a2 = (Author) findOne("firstName", "first", authorPath);
@@ -56,21 +54,17 @@ public class Library {
                 }
             } catch (NoSuchFieldException | NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
                 //if we reach this place, we're probably not looking at a book
-                break;
-            }
-        }
-        for (File f : Database.getFilesFromPath(path)) {
-            ArrayList<String> a = (ArrayList<String>) Database.makeListFromTxt(f.toPath());
-            try {
-                Author.class.getDeclaredField(key);
-                String makeGetter = "get".concat(Author.class.getDeclaredField(key).getName().substring(0, 1).toUpperCase() + Author.class.getDeclaredField(key).getName().substring(1));
-                Method meth = Author.class.getDeclaredMethod(makeGetter);
-                Author n = new Author(a);
-                if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
-                    return n;
+                try {
+                    Author.class.getDeclaredField(key);
+                    String makeGetter = "get".concat(Author.class.getDeclaredField(key).getName().substring(0, 1).toUpperCase() + Author.class.getDeclaredField(key).getName().substring(1));
+                    Method meth = Author.class.getDeclaredMethod(makeGetter);
+                    Author n = new Author(a);
+                    if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
+                        return n;
+                    }//practice 
+                } catch (NoSuchFieldException | NoSuchMethodException | InvocationTargetException | IllegalAccessException er) {
+
                 }
-            } catch (NoSuchFieldException | NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
-                break;
             }
         }
         System.out.println("Search inconclusive");

@@ -17,7 +17,7 @@ public class Database {
         File file = new File(String.valueOf(path));
         try {
             if (file.exists()) {
-                System.out.println("Filename already exists, overwriting file...");
+                System.out.println("Filename "+file.toString()+" already exists, overwriting file...");
             }
             PrintWriter writer = null;
             writer = new PrintWriter(String.valueOf(path), StandardCharsets.UTF_8);
