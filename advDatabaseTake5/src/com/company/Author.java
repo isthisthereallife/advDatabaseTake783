@@ -5,11 +5,11 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class Author {
-    String authorID;
-    String firstName;
-    String lastName;
-    String bibliography;
-    Path path = Paths.get("authors/");
+    private String authorID;
+    private String firstName;
+    private String lastName;
+    private String bibliography;
+    private Path path = Paths.get("authors/");
 
     Author() {
         this.authorID = "no id";
@@ -63,5 +63,9 @@ public class Author {
     public String toString(){
         return "authorID "+authorID+"\nfirstName "+firstName+"\nlastName "+lastName+
                 "\nbibliography "+bibliography+"\npath "+path;
+    }
+
+    public Path getPath() {
+        return this.path;
     }
 }

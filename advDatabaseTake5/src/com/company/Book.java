@@ -2,22 +2,20 @@ package com.company;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.Instant;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 
 public class Book {
-    String bookID;
-    String ISBN;
-    String title;
-    String authorID;
-    String genre;
-    String year;
-    Path path = Paths.get("books/");
-    LocalDateTime dateTimeCreated;
-    LocalDateTime dateTimeAccessed;
+    private String bookID;
+    private String ISBN;
+    private String title;
+    private String authorID;
+    private String genre;
+    private String year;
+    private Path path = Paths.get("books/");
+    private LocalDateTime dateTimeCreated;
+    private LocalDateTime dateTimeAccessed;
 
 
     Book() {
@@ -111,4 +109,15 @@ public class Book {
                 "\nauthorID " + authorID + "\ngenre " + genre + "\nyear " + year + "\npath " + path+"\ncreated "+dateTimeCreated.toString()+"\naccessed "+dateTimeAccessed.toString();
     }
 
+    public LocalDateTime getDateTimeCreated() {
+        return dateTimeCreated;
+    }
+
+    public LocalDateTime getDateTimeAccessed() {
+        return dateTimeAccessed;
+    }
+
+    public Path getPath() {
+        return this.path;
+    }
 }

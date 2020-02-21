@@ -1,0 +1,9 @@
+bookID book3
+ISBN 3333
+title t3
+authorID authere
+genre kategery
+year 3333
+path books\book3.txt
+created 2020-02-19T16:30:25.555894600
+accessed 2020-02-19T16:30:25.565809800

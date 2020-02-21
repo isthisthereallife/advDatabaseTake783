@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/databases/library/books/book3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/LibraryMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/SearchMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/TimeSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,32 +152,40 @@
       <option name="project" value="LOCAL" />
       <updated>1582290443408</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="hmmm">
+      <created>1582292405591</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582292405591</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fml" />
     <MESSAGE value="authors nu" />
     <MESSAGE value="ändrat så att jag inte medvetet går in i catch ^^," />
-    <option name="LAST_COMMIT_MESSAGE" value="ändrat så att jag inte medvetet går in i catch ^^," />
+    <MESSAGE value="hmmm" />
+    <option name="LAST_COMMIT_MESSAGE" value="hmmm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582279202193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582279202193" />
-    <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1582291552261">
+    <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1582301841553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582291552261" />
+    <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582301841553" />
     <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar" timestamp="1582271038255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar/0.0.1920.1040@0.0.1920.1040" timestamp="1582271038255" />
-    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582290442940">
+    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582292405135">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582290442940" />
+    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582292405135" />
     <state x="345" y="266" key="FileChooserDialogImpl" timestamp="1582270054311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -179,30 +194,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="397" width="329" height="245" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582279119569" />
-    <state width="1877" height="487" key="GridCell.Tab.0.bottom" timestamp="1582291946892">
+    <state width="1877" height="449" key="GridCell.Tab.0.bottom" timestamp="1582301852435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="487" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582291946892" />
-    <state width="1877" height="487" key="GridCell.Tab.0.center" timestamp="1582291946892">
+    <state width="1877" height="449" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582301852435" />
+    <state width="1877" height="449" key="GridCell.Tab.0.center" timestamp="1582301852435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="487" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582291946892" />
-    <state width="1877" height="487" key="GridCell.Tab.0.left" timestamp="1582291946883">
+    <state width="1877" height="449" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582301852435" />
+    <state width="1877" height="449" key="GridCell.Tab.0.left" timestamp="1582301852435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="487" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582291946883" />
-    <state width="1877" height="487" key="GridCell.Tab.0.right" timestamp="1582291946892">
+    <state width="1877" height="449" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582301852435" />
+    <state width="1877" height="449" key="GridCell.Tab.0.right" timestamp="1582301852435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="487" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582291946892" />
+    <state width="1877" height="449" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582301852435" />
     <state x="653" y="232" key="RollbackChangesDialog" timestamp="1582278989122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="653" y="232" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582278989122" />
-    <state x="552" y="242" key="Vcs.Push.Dialog.v2" timestamp="1582290448385">
+    <state x="552" y="242" key="Vcs.Push.Dialog.v2" timestamp="1582292407486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582290448385" />
+    <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582292407486" />
     <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582273459401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -211,6 +226,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582279046252" />
+    <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1582299184224">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582299184224" />
     <state x="666" y="149" key="refactoring.ChangeSignatureDialog" timestamp="1582280312034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -219,18 +238,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582287198321" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582291373730">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582295280531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582291373730" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582295280531" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Library.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="46" />
+          <url>file://$PROJECT_DIR$/src/com/company/Search.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
