@@ -1,5 +1,8 @@
 package com.company.db;
 
+import com.company.lib.Author;
+import com.company.lib.Book;
+
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
@@ -63,6 +66,21 @@ public abstract class Database {
             try {
                 Files.delete(path);
                 System.out.println("Deleted "+path);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    public static void verifyDirectoryIntegrity(Path path) {
+        checkPath(path);
+    }
+
+    private static void checkPath(Path path) {
+
+        if (!Files.exists(path)) {
+            System.out.println(path + " does not exist... creating...");
+            try {
+                Files.createDirectories(path);
             } catch (IOException e) {
                 e.printStackTrace();
             }
