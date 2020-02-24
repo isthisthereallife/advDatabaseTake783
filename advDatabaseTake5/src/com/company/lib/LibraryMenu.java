@@ -1,4 +1,6 @@
-package com.company;
+package com.company.lib;
+
+import com.company.db.Search;
 
 import java.util.Scanner;
 
@@ -14,7 +16,7 @@ public class LibraryMenu {
                     new SearchMenu();
                     break;
                 case "2":
-                    Search.printResult(Search.findMany("bookID","",Library.bookPath));
+                    Search.printResult(Search.findMany("bookID","", Book.class));
                     break;
                 case "3":
                 case "0":

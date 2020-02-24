@@ -1,44 +1,48 @@
-package com.company;
+package com.company.lib;
+
+import com.company.db.Entity;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.List;
 
 
-public class Book {
+public class Book implements Entity {
     private String bookID;
     private String ISBN;
     private String title;
     private String authorID;
     private String genre;
     private String year;
-    private Path path = Paths.get("books/");
+    private Path path;
     private LocalDateTime dateTimeCreated;
     private LocalDateTime dateTimeAccessed;
 
 
-    Book() {
+    public Book() {
         this.bookID = "no id";
         this.ISBN = "no isbn";
         this.title = "no title";
         this.authorID = "no author";
         this.genre = "no genre";
         this.year = "no year";
-        this.path = Paths.get(path.toString() + "/" + this.bookID + ".txt");
+        this.path = Paths.get(this.bookID + ".txt");
         this.dateTimeCreated = LocalDateTime.now();
         this.dateTimeAccessed = LocalDateTime.now();
     }
 
-    Book(List<String> s) {
-        this.bookID = s.get(0).substring(6).trim();
-        this.ISBN = s.get(1).substring(4).trim();
-        this.title = s.get(2).substring(5).trim();
-        this.authorID = s.get(3).substring(8).trim();
-        this.genre = s.get(4).substring(5).trim();
-        this.year = s.get(5).substring(4).trim();
-        this.path = Paths.get(path.toString() + "/" + this.bookID + ".txt");
-        this.dateTimeCreated = LocalDateTime.parse(s.get(7).substring(7).trim());
+    public Book(List<String> s) {
+        this.bookID = s.get(0).trim();
+        this.ISBN = s.get(1).trim();
+        this.title = s.get(2).trim();
+        this.authorID = s.get(3).trim();
+        this.genre = s.get(4).trim();
+        this.year = s.get(5).trim();
+        this.path = Paths.get(this.bookID + ".txt");
+        this.dateTimeCreated = LocalDateTime.parse(s.get(7).trim());
         this.dateTimeAccessed = LocalDateTime.now();
     }
 
@@ -50,7 +54,7 @@ public class Book {
         this.authorID = authorID;
         this.genre = genre;
         this.year = year;
-        this.path = Paths.get(path.toString() + "/" + this.bookID + ".txt");
+        this.path = Paths.get(this.bookID + ".txt");
         this.dateTimeCreated = LocalDateTime.now();
         this.dateTimeAccessed = LocalDateTime.now();
     }
@@ -105,8 +109,8 @@ public class Book {
 
 
     public String toString() {
-        return "bookID " + bookID + "\nISBN " + ISBN + "\ntitle " + title +
-                "\nauthorID " + authorID + "\ngenre " + genre + "\nyear " + year + "\npath " + path+"\ncreated "+dateTimeCreated.toString()+"\naccessed "+dateTimeAccessed.toString();
+        return bookID + "\n" + ISBN + "\n" + title +
+                "\n" + authorID + "\n" + genre + "\n" + year + "\n" + path+"\n"+dateTimeCreated+"\n"+dateTimeAccessed;
     }
 
     public LocalDateTime getDateTimeCreated() {
@@ -117,7 +121,12 @@ public class Book {
         return dateTimeAccessed;
     }
 
-    public Path getPath() {
+    @Override
+    public Path getPathWithId() {
         return this.path;
+    }
+
+    public static Path getPath() {
+        return Path.of(Library.path + "/books");
     }
 }

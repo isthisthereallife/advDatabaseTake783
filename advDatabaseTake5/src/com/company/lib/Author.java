@@ -1,30 +1,32 @@
-package com.company;
+package com.company.lib;
+
+import com.company.db.Entity;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class Author {
+public class Author implements Entity {
     private String authorID;
     private String firstName;
     private String lastName;
     private String bibliography;
-    private Path path = Paths.get("authors/");
+    private Path path;
 
-    Author() {
+    public Author() {
         this.authorID = "no id";
         this.firstName = "no first name";
         this.lastName = "no last name";
         this.bibliography = "no bibliography";
-        this.path = Paths.get(path.toString() + "/" + this.authorID);
+        this.path = Paths.get(this.authorID+".txt");
     }
 
-    Author(List<String> s) {
-        this.authorID = s.get(0).substring(8).trim();
-        this.firstName = s.get(1).substring(10).trim();
-        this.lastName = s.get(2).substring(9).trim();
-        this.bibliography = s.get(3).substring(12).trim();
-        this.path = Paths.get(path.toString() + "/" + this.authorID);
+    public Author(List<String> s) {
+        this.authorID = s.get(0).trim();
+        this.firstName = s.get(1).trim();
+        this.lastName = s.get(2).trim();
+        this.bibliography = s.get(3).trim();
+        this.path = Paths.get(this.authorID+".txt");
     }
 
     public String getAuthorID() {
@@ -61,11 +63,20 @@ public class Author {
 
 
     public String toString(){
-        return "authorID "+authorID+"\nfirstName "+firstName+"\nlastName "+lastName+
-                "\nbibliography "+bibliography+"\npath "+path;
+        return authorID+"\n"+firstName+"\n"+lastName+
+                "\n"+bibliography+"\n"+path;
     }
 
-    public Path getPath() {
+    @Override
+    public Path getPathWithId() {
         return this.path;
+    }
+
+    public static Path getPath() {
+        return Path.of(Library.path + "/authors");
+    }
+
+    public void updatePath() {
+        this.path = Path.of(this.authorID+".txt");
     }
 }

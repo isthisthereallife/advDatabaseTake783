@@ -1,7 +1,8 @@
-package com.company;
+package com.company.lib;
+
+import com.company.db.Search;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SearchMenu {
@@ -17,15 +18,15 @@ public class SearchMenu {
                 case "1":
                     System.out.print("Please enter query: ");
                     val = input.nextLine();
-                    Search.findMany("lastName",val,Library.authorPath);
+                    Search.findMany("lastName",val,Author.class);
                     break;
                 case "2":
                     System.out.print("Please enter query: ");
                     val = input.nextLine();
-                    Search.printResult(Search.findMany("title",val,Library.bookPath));
+                    Search.printResult(Search.findMany("title",val,Book.class));
                     break;
                 case "3":
-                    Search.printResult(Search.findMany("dateTimeCreated", LocalDateTime.now().minusDays(1).toString(),Library.bookPath));
+                    Search.printResult(Search.findMany("dateTimeCreated", LocalDateTime.now().minusDays(1).toString(),Book.class));
                     break;
                 case "0":
                     break;

@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/databases/library/books/book3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/LibraryMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/SearchMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/TimeSearch.java" afterDir="false" />
+    <list default="true" id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="search through time and space">
+      <change afterPath="$PROJECT_DIR$/../Filsystemsbibliotek/.idea/Filsystemsbibliotek.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/db/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advJavaReflectionsExercise/advJavaReflectionsExercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../databaseTake4/databaseTake4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fffffff/.idea/fffffff.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databases/library/books/book3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/LibraryMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/LibraryMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/SearchMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/SearchMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +30,7 @@
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,14 +51,22 @@
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/databases/library/books" />
+  </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5\databases\library\books" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.company" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.company.lib.Main" />
       <module name="advDatabaseTake5" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
@@ -159,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582292405591</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="search through time and space">
+      <created>1582302078446</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1582302078446</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,7 +189,8 @@
     <MESSAGE value="authors nu" />
     <MESSAGE value="ändrat så att jag inte medvetet går in i catch ^^," />
     <MESSAGE value="hmmm" />
-    <option name="LAST_COMMIT_MESSAGE" value="hmmm" />
+    <MESSAGE value="search through time and space" />
+    <option name="LAST_COMMIT_MESSAGE" value="search through time and space" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582279202193">
@@ -182,10 +205,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar/0.0.1920.1040@0.0.1920.1040" timestamp="1582271038255" />
-    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582292405135">
+    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582537286961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582292405135" />
+    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582537286961" />
     <state x="345" y="266" key="FileChooserDialogImpl" timestamp="1582270054311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -194,34 +217,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="397" width="329" height="245" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582279119569" />
-    <state width="1877" height="449" key="GridCell.Tab.0.bottom" timestamp="1582301852435">
+    <state width="1877" height="415" key="GridCell.Tab.0.bottom" timestamp="1582553492166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="449" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582301852435" />
-    <state width="1877" height="449" key="GridCell.Tab.0.center" timestamp="1582301852435">
+    <state width="1877" height="415" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582553492166" />
+    <state width="1877" height="415" key="GridCell.Tab.0.center" timestamp="1582553492166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="449" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582301852435" />
-    <state width="1877" height="449" key="GridCell.Tab.0.left" timestamp="1582301852435">
+    <state width="1877" height="415" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582553492166" />
+    <state width="1877" height="415" key="GridCell.Tab.0.left" timestamp="1582553492166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="449" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582301852435" />
-    <state width="1877" height="449" key="GridCell.Tab.0.right" timestamp="1582301852435">
+    <state width="1877" height="415" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582553492166" />
+    <state width="1877" height="415" key="GridCell.Tab.0.right" timestamp="1582553492166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="449" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582301852435" />
+    <state width="1877" height="415" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582553492166" />
     <state x="653" y="232" key="RollbackChangesDialog" timestamp="1582278989122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="653" y="232" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582278989122" />
-    <state x="552" y="242" key="Vcs.Push.Dialog.v2" timestamp="1582292407486">
+    <state x="552" y="242" key="Vcs.Push.Dialog.v2" timestamp="1582302079996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582292407486" />
-    <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582273459401">
+    <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582302079996" />
+    <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582538050282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582273459401" />
+    <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582538050282" />
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582279046252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -234,22 +257,32 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="149" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582280312034" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1582287198321">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1582537809485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582287198321" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582295280531">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582537809485" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582546711395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582295280531" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582546711395" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Search.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="51" />
+          <url>file://$PROJECT_DIR$/src/com/company/lib/Library.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/lib/Library.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/lib/Book.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

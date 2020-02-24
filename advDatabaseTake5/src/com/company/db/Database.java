@@ -1,6 +1,7 @@
-package com.company;
+package com.company.db;
 
 import java.io.*;
+import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -13,7 +14,17 @@ public abstract class Database {
         return path.toFile().listFiles();
     }
 
-    public static void save(String stringToSave, Path path) {
+    public static void save(Entity entity) {
+
+        Path path = null;
+        try {
+            path = (Path)entity.getClass().getDeclaredMethod("getPath").invoke(null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        path = path.resolve(entity.getPathWithId());
+        System.out.println("path = " + path);
+
         File file = new File(String.valueOf(path));
         try {
             if (file.exists()) {
@@ -21,7 +32,7 @@ public abstract class Database {
             }
             PrintWriter writer = null;
             writer = new PrintWriter(String.valueOf(path), StandardCharsets.UTF_8);
-            writer.println(stringToSave);
+            writer.println(entity.toString());
             writer.close();
 
         } catch (IOException e) {
@@ -39,7 +50,15 @@ public abstract class Database {
         }
         return contents;
     }
-    public static void delete(Path path){
+    public static void delete(Entity entity){
+        Path path = null;
+        try {
+            path = (Path)entity.getClass().getDeclaredMethod("getPath").invoke(null);
+        } catch (IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+            e.printStackTrace();
+        }
+        path = path.resolve(entity.getPathWithId());
+
         if(Files.exists(path)){
             try {
                 Files.delete(path);
