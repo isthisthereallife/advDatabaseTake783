@@ -13,6 +13,7 @@ public class Author implements Entity {
     private String bibliography;
     private Path path;
 
+
     public Author() {
         this.authorID = "no id";
         this.firstName = "no first name";

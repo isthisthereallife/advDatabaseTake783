@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/db/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/lib/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582553623365</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="null">
+      <created>1582557788721</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1582557788721</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -191,7 +197,8 @@
     <MESSAGE value="hmmm" />
     <MESSAGE value="search through time and space" />
     <MESSAGE value="generaliserat helt i search" />
-    <option name="LAST_COMMIT_MESSAGE" value="generaliserat helt i search" />
+    <MESSAGE value="null" />
+    <option name="LAST_COMMIT_MESSAGE" value="null" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582279202193">
@@ -202,14 +209,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582301841553" />
+    <state x="690" y="268" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1582572192852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582572192852" />
     <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar" timestamp="1582271038255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar/0.0.1920.1040@0.0.1920.1040" timestamp="1582271038255" />
-    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582553622727">
+    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582557788184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582553622727" />
+    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582557788184" />
     <state x="345" y="266" key="FileChooserDialogImpl" timestamp="1582557067268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -218,30 +229,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="397" width="329" height="245" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582279119569" />
-    <state width="1877" height="237" key="GridCell.Tab.0.bottom" timestamp="1582557768761">
+    <state width="1877" height="203" key="GridCell.Tab.0.bottom" timestamp="1582574153834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582557768761" />
-    <state width="1877" height="237" key="GridCell.Tab.0.center" timestamp="1582557768761">
+    <state width="1877" height="203" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582574153834" />
+    <state width="1877" height="203" key="GridCell.Tab.0.center" timestamp="1582574153834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582557768761" />
-    <state width="1877" height="237" key="GridCell.Tab.0.left" timestamp="1582557768761">
+    <state width="1877" height="203" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582574153834" />
+    <state width="1877" height="203" key="GridCell.Tab.0.left" timestamp="1582574153834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582557768761" />
-    <state width="1877" height="237" key="GridCell.Tab.0.right" timestamp="1582557768761">
+    <state width="1877" height="203" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582574153834" />
+    <state width="1877" height="203" key="GridCell.Tab.0.right" timestamp="1582574153834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="237" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582557768761" />
+    <state width="1877" height="203" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582574153834" />
     <state x="653" y="232" key="RollbackChangesDialog" timestamp="1582278989122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="653" y="232" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582278989122" />
-    <state x="552" y="242" key="Vcs.Push.Dialog.v2" timestamp="1582553627726">
+    <state x="552" y="242" key="Vcs.Push.Dialog.v2" timestamp="1582557790651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582553627726" />
+    <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582557790651" />
     <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582538050282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -266,16 +277,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582546711395" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/lib/Book.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
