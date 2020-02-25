@@ -25,9 +25,7 @@ public abstract class Search {
             }
         } catch (Exception e) {
             System.out.println("*");
-
         }
-
 
         try {
             String makeGetter = "get".concat(klass.getDeclaredField(key).getName().substring(0, 1).toUpperCase() + klass.getDeclaredField(key).getName().substring(1));
@@ -35,19 +33,18 @@ public abstract class Search {
 
             for (ArrayList<String> b : a) {
                 n = klass.getConstructor(List.class).newInstance(b);
-
                 if (key.equals("dateTimeCreated") || key.equals("dateTimeAccessed")) {
                     if (LocalDateTime.parse(String.valueOf(meth.invoke(n))).isBefore(LocalDateTime.parse(val))) {
-                        objectsFound.add((Entity)n);
+                        objectsFound.add((Entity) n);
                     }
                 } else {
                     if (!literalSearch) {
                         if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
-                            objectsFound.add((Entity)n);
+                            objectsFound.add((Entity) n);
                         }
                     } else {
                         if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).matches())
-                            objectsFound.add((Entity)n);
+                            objectsFound.add((Entity) n);
                     }
                 }
             }
@@ -55,7 +52,6 @@ public abstract class Search {
             System.out.println("**");
         }
         return objectsFound;
-
     }
 
     public static Optional<Entity> findOne(String key, String val, boolean literalSearch, Class klass) {
@@ -69,7 +65,6 @@ public abstract class Search {
             for (File f : Database.getFilesFromPath(path)) {
                 a.add((ArrayList<String>) Database.makeListFromTxt(f.toPath()));
             }
-
         } catch (IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
             System.out.println("*");
         }
@@ -106,11 +101,12 @@ public abstract class Search {
         if (arrayList.size() > 0) {
             for (Entity o : arrayList) {
                 o = (Entity) o;
-                System.out.println("\n"+o.toPrettyString() + "\n");
+                System.out.println("\n" + o.toPrettyString() + "\n");
             }
         } else System.out.println("\n*Search came up empty.*\n");
     }
+
     public static void printResult(Optional<Entity> ent) {
-        ent.ifPresentOrElse(i-> System.out.println("\n"+i.toPrettyString() + "\n"), ()->System.out.println("\n*Search came up empty.*\n"));
+        ent.ifPresentOrElse(i -> System.out.println("\n" + i.toPrettyString() + "\n"), () -> System.out.println("\n*Search came up empty.*\n"));
     }
 }

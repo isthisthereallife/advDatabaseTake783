@@ -45,6 +45,7 @@ public class SearchMenu {
     void diySearch(){
         System.out.print("Search what field? : ");
         String field = new Scanner(System.in).nextLine();
+        if(field.equalsIgnoreCase("author"))field = "authorID";
 
         System.out.print("Search where? ");
         Class c = null;
@@ -68,18 +69,7 @@ public class SearchMenu {
 
         System.out.print("Find one or many? ");
         if (new Scanner(System.in).nextLine().equalsIgnoreCase("one")) {
-            Optional<Entity> one = Search.findOne(field, query, strictSearch, c);
-
-
-
-            one.ifPresent(i -> {
-//                Author a = (Author) one.get();
-//                a.setAuthorID("editedAuthorID");
-//                a.updatePath();
-//                Database.save(a);
-                System.out.println();
-                System.out.println(i);
-            });
+            Search.printResult(Search.findOne(field, query, strictSearch, c));
         } else {
             Search.printResult(Search.findMany(field,query,strictSearch,c));
         }

@@ -18,20 +18,15 @@ public class Library {
         Database.verifyDirectoryIntegrity(Book.getPath());
         Database.verifyDirectoryIntegrity(Author.getPath());
 
-
+        new LibraryMenu();
         new SearchMenu();
+
         //if (Entity.class.)
         //for(Class c : Entity.class)
 
-        System.out.print("Match all words? :");
-        boolean strictSearch = true;
-        if (new Scanner(System.in).nextLine().equalsIgnoreCase("yes")) {
-            strictSearch = false;
-        }
-
 
         //new LibraryMenu();
-        Book b2 = new Book("9oeu98", "I292223", "Thgok 3", "Authore", "Fantasy", "1889");
+        /*Book b2 = new Book("9oeu98", "I292223", "Thgok 3", "Authore", "Fantasy", "1889");
         Book b = new Book("8a8ou98", "34329h942", "Thgok 4", "Authore", "Harlequin", "1918");
         Author au = new Author();
         Author ae = au;
@@ -50,7 +45,7 @@ public class Library {
 
         System.out.println("\nBooks created before yesterday: ");
         Search.printResult(Search.findMany("dateTimeCreated", LocalDateTime.now().minusDays(1).toString(), false,Book.class));
-
+*/
     }
 
     @Deprecated

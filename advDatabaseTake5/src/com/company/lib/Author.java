@@ -33,6 +33,13 @@ public class Author implements Entity {
         this.path = Paths.get(this.authorID+".txt");
     }
 
+    public Author(String authorID, String firstName, String lastName) {
+        this.authorID = authorID;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.path = Paths.get(this.authorID+".txt");
+    }
+
     public String getAuthorID() {
         return authorID;
     }

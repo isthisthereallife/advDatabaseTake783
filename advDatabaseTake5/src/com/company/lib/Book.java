@@ -7,6 +7,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
 import java.util.List;
 import java.util.Optional;
 
@@ -48,7 +52,7 @@ public class Book implements Entity {
     }
 
 
-    Book(String bookID, String ISBN, String title, String authorID, String genre, String year) {
+    public Book(String bookID, String ISBN, String title, String authorID, String genre, String year) {
         this.bookID = bookID;
         this.ISBN = ISBN;
         this.title = title;
@@ -56,7 +60,7 @@ public class Book implements Entity {
         this.genre = genre;
         this.year = year;
         this.path = Paths.get(this.bookID + ".txt");
-        this.dateTimeCreated = LocalDateTime.now();
+        this.dateTimeCreated =LocalDateTime.now();
         this.dateTimeAccessed = LocalDateTime.now();
     }
 
@@ -131,16 +135,17 @@ public class Book implements Entity {
         return Path.of(Library.path + "/books");
     }
     public String toPrettyString(){
-        //get authorName
+
         String authorName = "unknown";
         Optional<Entity> ent = Search.findOne("authorID",authorID,true,Author.class);
         if (ent.isPresent()){
             Author a = (Author) ent.get();
             authorName = a.getFirstName() + " " + a.getLastName();
         }
-        Timestamp tsc = Timestamp.valueOf(dateTimeCreated);
-        Timestamp tsa = Timestamp.valueOf(dateTimeAccessed);
-        return String.format("~~~~~~~~~~~~~~%nTitle: %s%nAuthor: %s%nGenre: %s%nYear: %s%nDate added: %s%nDate accessed: %s%n~~~~~~~~~~~~~~",title,authorName,genre,year,tsc,tsa);
+        return String.format("~~~~~~~~~~~~~~%nTitle: %s%nAuthor: %s%nGenre: %s%nYear: %s%nDate added: %s%nDate accessed: %s%n~~~~~~~~~~~~~~",title,
+                authorName,genre,year,
+                dateTimeCreated.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)),
+                dateTimeAccessed.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)));
     }
 
 }

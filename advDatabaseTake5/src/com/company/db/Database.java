@@ -12,7 +12,6 @@ import java.util.List;
 
 public abstract class Database {
 
-
     public static File[] getFilesFromPath(Path path) {
         return path.toFile().listFiles();
     }

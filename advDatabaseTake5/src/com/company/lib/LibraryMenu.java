@@ -16,9 +16,10 @@ public class LibraryMenu {
                     new SearchMenu();
                     break;
                 case "2":
-                    Search.printResult(Search.findMany("bookID","", false,Book.class));
+                    Search.printResult(Search.findMany("bookID", "", false, Book.class));
                     break;
                 case "3":
+                    new AddBook();
                 case "0":
                     break;
                 default:
