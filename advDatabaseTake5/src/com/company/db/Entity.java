@@ -8,4 +8,6 @@ public interface Entity {
     }
 
     Path getPathWithId();
+
+    String toPrettyString();
 }

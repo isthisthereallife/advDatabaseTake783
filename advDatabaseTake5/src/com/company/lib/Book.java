@@ -1,13 +1,14 @@
 package com.company.lib;
 
 import com.company.db.Entity;
+import com.company.db.Search;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 import java.util.List;
+import java.util.Optional;
 
 
 public class Book implements Entity {
@@ -129,4 +130,17 @@ public class Book implements Entity {
     public static Path getPath() {
         return Path.of(Library.path + "/books");
     }
+    public String toPrettyString(){
+        //get authorName
+        String authorName = "unknown";
+        Optional<Entity> ent = Search.findOne("authorID",authorID,true,Author.class);
+        if (ent.isPresent()){
+            Author a = (Author) ent.get();
+            authorName = a.getFirstName() + " " + a.getLastName();
+        }
+        Timestamp tsc = Timestamp.valueOf(dateTimeCreated);
+        Timestamp tsa = Timestamp.valueOf(dateTimeAccessed);
+        return String.format("~~~~~~~~~~~~~~%nTitle: %s%nAuthor: %s%nGenre: %s%nYear: %s%nDate added: %s%nDate accessed: %s%n~~~~~~~~~~~~~~",title,authorName,genre,year,tsc,tsa);
+    }
+
 }

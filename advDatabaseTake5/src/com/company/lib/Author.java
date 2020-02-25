@@ -1,10 +1,13 @@
 package com.company.lib;
 
 import com.company.db.Entity;
+import com.company.db.Search;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Author implements Entity {
     private String authorID;
@@ -80,4 +83,16 @@ public class Author implements Entity {
     public void updatePath() {
         this.path = Path.of(this.authorID+".txt");
     }
+
+    public String toPrettyString(){
+        //get authorName
+        String bibliography = "";
+        ArrayList<Entity> a = Search.findMany("authorID",authorID,true,Book.class);
+        for (Entity ent : a){
+            bibliography = bibliography.concat(((Book) ent).getTitle()+"("+((Book) ent).getYear()+")\n");
+        }
+
+        return String.format("~~~~~~~~~~~~~~%nName: %s %s%nBibliography: %n%s~~~~~~~~~~~~~~",firstName,lastName,bibliography);
+    }
+
 }

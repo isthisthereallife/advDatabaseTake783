@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="">
+    <list default="true" id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="null">
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/advDatabaseTake5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/db/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/db/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/db/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/LibraryMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/SearchMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/db/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/db/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Search.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/lib/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/lib/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/LibraryMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/LibraryMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/SearchMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/SearchMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +69,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DanielNyMapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../advDatabaseKraken" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -69,6 +92,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -217,34 +243,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar/0.0.1920.1040@0.0.1920.1040" timestamp="1582271038255" />
-    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582579011886">
+    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582627680119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582579011886" />
-    <state x="345" y="266" key="FileChooserDialogImpl" timestamp="1582557067268">
+    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582627680119" />
+    <state x="345" y="266" key="FileChooserDialogImpl" timestamp="1582623464579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="345" y="266" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582557067268" />
+    <state x="345" y="266" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582623464579" />
     <state x="807" y="397" width="329" height="245" key="Github.ShareDialog" timestamp="1582279119569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="397" width="329" height="245" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582279119569" />
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1582579037610">
+    <state width="1877" height="380" key="GridCell.Tab.0.bottom" timestamp="1582627605219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582579037610" />
-    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1582579037610">
+    <state width="1877" height="380" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582627605219" />
+    <state width="1877" height="380" key="GridCell.Tab.0.center" timestamp="1582627605219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582579037610" />
-    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1582579037610">
+    <state width="1877" height="380" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582627605219" />
+    <state width="1877" height="380" key="GridCell.Tab.0.left" timestamp="1582627605219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582579037610" />
-    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1582579037610">
+    <state width="1877" height="380" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582627605219" />
+    <state width="1877" height="380" key="GridCell.Tab.0.right" timestamp="1582627605219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582579037610" />
+    <state width="1877" height="380" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582627605219" />
     <state x="653" y="232" key="RollbackChangesDialog" timestamp="1582278989122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -269,10 +295,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="149" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582280312034" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1582537809485">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1582626992755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582537809485" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582626992755" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582546711395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

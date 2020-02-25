@@ -13,8 +13,8 @@ import java.util.regex.Pattern;
 
 public abstract class Search {
 
-    public static ArrayList<Object> findMany(String key, String val, Class klass) {
-        ArrayList<Object> objectsFound = new ArrayList<>();
+    public static ArrayList<Entity> findMany(String key, String val, boolean literalSearch, Class klass) {
+        ArrayList<Entity> objectsFound = new ArrayList<>();
         Object n = null;
         Method meth = null;
         ArrayList<ArrayList<String>> a = new ArrayList<>();
@@ -24,7 +24,8 @@ public abstract class Search {
                 a.add((ArrayList<String>) Database.makeListFromTxt(f.toPath()));
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("*");
+
         }
 
 
@@ -37,20 +38,27 @@ public abstract class Search {
 
                 if (key.equals("dateTimeCreated") || key.equals("dateTimeAccessed")) {
                     if (LocalDateTime.parse(String.valueOf(meth.invoke(n))).isBefore(LocalDateTime.parse(val))) {
-                        objectsFound.add(n);
+                        objectsFound.add((Entity)n);
                     }
-                } else  if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
-                    objectsFound.add(n);
+                } else {
+                    if (!literalSearch) {
+                        if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
+                            objectsFound.add((Entity)n);
+                        }
+                    } else {
+                        if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).matches())
+                            objectsFound.add((Entity)n);
+                    }
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("**");
         }
         return objectsFound;
 
     }
 
-    public static Optional<Entity> findOne(String key, String val, Class klass) {
+    public static Optional<Entity> findOne(String key, String val, boolean literalSearch, Class klass) {
         Object n = null;
         Method meth = null;
         Path path = null;
@@ -63,34 +71,46 @@ public abstract class Search {
             }
 
         } catch (IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
-            e.printStackTrace();
+            System.out.println("*");
         }
 
         try {
-            String makeGetter = "get".concat(klass.getDeclaredField(key).getName().substring(0,1).toUpperCase() + klass.getDeclaredField(key).getName().substring(1));
+            String makeGetter = "get".concat(klass.getDeclaredField(key).getName().substring(0, 1).toUpperCase() + klass.getDeclaredField(key).getName().substring(1));
             meth = klass.getDeclaredMethod(makeGetter);
 
             for (ArrayList<String> b : a) {
                 n = klass.getConstructor(List.class).newInstance(b);
 
-                if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
-                    return Optional.of((Entity)n);
+                if (key.equals("dateTimeCreated") || key.equals("dateTimeAccessed")) {
+                    if (LocalDateTime.parse(String.valueOf(meth.invoke(n))).isBefore(LocalDateTime.parse(val))) {
+                        return Optional.of((Entity) n);
+                    }
+                } else {
+                    if (!literalSearch) {
+                        if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
+                            return Optional.of((Entity) n);
+                        }
+                    } else {
+                        if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).matches())
+                            return Optional.of((Entity) n);
+                    }
                 }
             }
-
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println("*");
         }
         return Optional.empty();
     }
 
-
-
-    public static void printResult(ArrayList<Object> arrayList) {
+    public static void printResult(ArrayList<Entity> arrayList) {
         if (arrayList.size() > 0) {
-            for (Object o : arrayList) {
-                System.out.println(o.toString() + "\n");
+            for (Entity o : arrayList) {
+                o = (Entity) o;
+                System.out.println("\n"+o.toPrettyString() + "\n");
             }
-        } else System.out.println("\nSearch came up empty.\n");
+        } else System.out.println("\n*Search came up empty.*\n");
+    }
+    public static void printResult(Optional<Entity> ent) {
+        ent.ifPresentOrElse(i-> System.out.println("\n"+i.toPrettyString() + "\n"), ()->System.out.println("\n*Search came up empty.*\n"));
     }
 }
