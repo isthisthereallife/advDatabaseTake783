@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e803b0d5-4f47-47f3-bf74-33962afd96ce" name="Default Changelist" comment="deleted master, renamed branch to master">
-      <change afterPath="$PROJECT_DIR$/mock_data/mock_authors.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mock_data/mock_books.csv" afterDir="false" />
+    <list default="true" id="e803b0d5-4f47-47f3-bf74-33962afd96ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../databaseSISTAVERSIONEN/databaseSISTAVERSIONEN.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/lib/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/AddBook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,15 +49,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../advDatabaseKraken" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5\mock_data" />
-      <recent name="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.company" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5\databases\library\books" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5\mock_data" />
+      <recent name="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5" />
     </key>
   </component>
   <component name="RunManager">
@@ -219,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582656848925</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="addBook()">
+      <created>1582658528755</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1582658528755</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -233,7 +237,8 @@
     <MESSAGE value="gonna mess with time" />
     <MESSAGE value="messed with search" />
     <MESSAGE value="deleted master, renamed branch to master" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted master, renamed branch to master" />
+    <MESSAGE value="addBook()" />
+    <option name="LAST_COMMIT_MESSAGE" value="addBook()" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582279202193">
@@ -252,18 +257,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar/0.0.1920.1040@0.0.1920.1040" timestamp="1582271038255" />
-    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582658448981">
+    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582658528198">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582658448981" />
+    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582658528198" />
     <state x="345" y="266" key="FileChooserDialogImpl" timestamp="1582623464579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="345" y="266" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582623464579" />
-    <state x="807" y="397" width="329" height="245" key="Github.ShareDialog" timestamp="1582279119569">
+    <state x="807" y="397" width="329" height="245" key="Github.ShareDialog" timestamp="1582658744615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="807" y="397" width="329" height="245" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582279119569" />
+    <state x="807" y="397" width="329" height="245" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582658744615" />
     <state width="1877" height="357" key="GridCell.Tab.0.bottom" timestamp="1582658199286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -284,10 +289,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="653" y="232" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582278989122" />
-    <state x="552" y="242" key="Vcs.Push.Dialog.v2" timestamp="1582643238646">
+    <state x="552" y="242" key="Vcs.Push.Dialog.v2" timestamp="1582658568253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582643238646" />
+    <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582658568253" />
     <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582538050282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -300,6 +305,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="682" y="234" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582643304186" />
+    <state x="342" y="141" key="new project wizard" timestamp="1582658903114">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="141" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1582658903114" />
     <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1582299184224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
