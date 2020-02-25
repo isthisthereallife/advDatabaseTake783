@@ -26,16 +26,16 @@ public abstract class Database {
         }
 
         path = path.resolve(entity.getPathWithId());
-        System.out.println("path = " + path);
 
         File file = new File(String.valueOf(path));
         try {
             if (file.exists()) {
-                System.out.println("Filename " + file.toString() + " already exists, overwriting file...");
+                System.out.println("Filename " + file.getName()+ " already exists, overwriting file...");
             }
             PrintWriter writer = null;
             writer = new PrintWriter(String.valueOf(path), StandardCharsets.UTF_8);
             writer.println(entity.toString());
+            System.out.println("Saved "+file.getName()+".");
             writer.close();
 
         } catch (IOException e) {

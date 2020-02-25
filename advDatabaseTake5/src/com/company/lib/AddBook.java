@@ -4,10 +4,12 @@ import com.company.db.Entity;
 import com.company.db.Search;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class AddBook {
     AddBook() {
+        boolean foundAuthor = false;
         String firstName;
         String lastName;
         Author a = new Author();
@@ -27,23 +29,33 @@ public class AddBook {
             a.setAuthorID(firstName + lastName);
 
         } else {
-            System.out.print("Search for author by last name: ");
-            ArrayList<Entity> entityArrayList = Search.findMany("lastName", s.nextLine(), false, Author.class);
-            System.out.println("Choose author from list: ");
-            for (int i = 0, entityArrayListSize = entityArrayList.size(); i < entityArrayListSize; i++) {
-                Author author = (Author) entityArrayList.get(i);
-                System.out.println(i + ". " + author.getFirstName() + " " + author.getLastName());
-            }
             do {
-                try {
-                    choice = s.nextInt();
-                    s.nextLine();
-                } catch (NumberFormatException e) {
-                    System.out.println("Try again. Enter a number from the list.");
+                System.out.print("Search for author by last name: ");
+                ArrayList<Entity> entityArrayList = Search.findMany("lastName", s.nextLine(), false, Author.class);
+                System.out.println("~~~~~~~~~~~~~~\nAuthors matching your search query: ");
+                for (int i = 0, entityArrayListSize = entityArrayList.size(); i < entityArrayListSize; i++) {
+                    Author author = (Author) entityArrayList.get(i);
+                    System.out.println(i + ". " + author.getFirstName() + " " + author.getLastName());
                 }
-            } while (choice < entityArrayList.size() - 1 || choice > entityArrayList.size());
+                if (entityArrayList.size() > 0) {
+                    do {
+                        System.out.print("~~~~~~~~~~~~~~\nChoose author from list: ");
+                        try {
+                            choice = s.nextInt();
+                            s.nextLine();
+                        } catch (InputMismatchException e) {
+                            choice = -1;
+                            s.nextLine();
+                            System.out.println("Try again. Enter a number from the list.");
+                        }
+                    } while (choice < 0 || choice > entityArrayList.size()-1);
 
-            a = (Author) entityArrayList.get(choice);
+
+                    a = (Author) entityArrayList.get(choice);
+                    foundAuthor = true;
+                } else System.out.println("None. Try again.\n~~~~~~~~~~~~~~");
+
+            }while(!foundAuthor);
         }
         System.out.print("Enter title: ");
         String title = s.nextLine();

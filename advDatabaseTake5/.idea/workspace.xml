@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/advDatabaseTake5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/db/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/db/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/db/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/LibraryMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/SearchMenu.java" afterDir="false" />
+    <list default="true" id="e803b0d5-4f47-47f3-bf74-33962afd96ce" name="Default Changelist" comment="deleted master, renamed branch to master">
+      <change afterPath="$PROJECT_DIR$/mock_data/mock_authors.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock_data/mock_books.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/AddBook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582642580643</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="deleted master, renamed branch to master">
+      <created>1582656848925</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1582656848925</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -238,7 +232,8 @@
     <MESSAGE value="null" />
     <MESSAGE value="gonna mess with time" />
     <MESSAGE value="messed with search" />
-    <option name="LAST_COMMIT_MESSAGE" value="messed with search" />
+    <MESSAGE value="deleted master, renamed branch to master" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted master, renamed branch to master" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582279202193">
@@ -257,10 +252,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar/0.0.1920.1040@0.0.1920.1040" timestamp="1582271038255" />
-    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582643528444">
+    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582658448981">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582643528444" />
+    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582658448981" />
     <state x="345" y="266" key="FileChooserDialogImpl" timestamp="1582623464579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -269,22 +264,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="397" width="329" height="245" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582279119569" />
-    <state width="938" height="286" key="GridCell.Tab.0.bottom" timestamp="1582643514473">
+    <state width="1877" height="357" key="GridCell.Tab.0.bottom" timestamp="1582658199286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582643514473" />
-    <state width="938" height="286" key="GridCell.Tab.0.center" timestamp="1582643514473">
+    <state width="1877" height="357" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582658199286" />
+    <state width="1877" height="357" key="GridCell.Tab.0.center" timestamp="1582658199286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="286" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582643514473" />
-    <state width="938" height="286" key="GridCell.Tab.0.left" timestamp="1582643514473">
+    <state width="1877" height="357" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582658199286" />
+    <state width="1877" height="357" key="GridCell.Tab.0.left" timestamp="1582658199286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="286" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582643514473" />
-    <state width="938" height="286" key="GridCell.Tab.0.right" timestamp="1582643514473">
+    <state width="1877" height="357" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582658199286" />
+    <state width="1877" height="357" key="GridCell.Tab.0.right" timestamp="1582658199286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="286" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582643514473" />
+    <state width="1877" height="357" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582658199286" />
     <state x="653" y="232" key="RollbackChangesDialog" timestamp="1582278989122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -321,5 +316,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582641732551" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/lib/AddBook.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/lib/AddBook.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
