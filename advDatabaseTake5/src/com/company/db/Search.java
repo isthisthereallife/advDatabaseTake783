@@ -106,7 +106,7 @@ public abstract class Search {
         } else System.out.println("\n*Search came up empty.*\n");
     }
 
-    public static void printResult(Optional<Entity> ent) {
-        ent.ifPresentOrElse(i -> System.out.println("\n" + i.toPrettyString() + "\n"), () -> System.out.println("\n*Search came up empty.*\n"));
+    public static void printResult(Optional<Entity> entity) {
+        entity.ifPresentOrElse(i -> System.out.println("\n" + i.toPrettyString() + "\n"), () -> System.out.println("\n*Search came up empty.*\n"));
     }
 }

@@ -7,28 +7,26 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AddBook {
-    AddBook(){
+    AddBook() {
         String firstName;
         String lastName;
-        Author a= new Author();
+        Author a = new Author();
         int choice = 99999;
-
 
 
         Scanner s = new Scanner(System.in);
 
         System.out.println("Add to existing author?");
-        if (s.nextLine().equalsIgnoreCase("no")){
+        if (s.nextLine().equalsIgnoreCase("no")) {
             System.out.println("Enter first name of author: ");
             firstName = s.nextLine();
             System.out.println("Enter last name of author: ");
             lastName = s.nextLine();
             a.setFirstName(firstName);
             a.setLastName(lastName);
-            a.setAuthorID(firstName+lastName);
+            a.setAuthorID(firstName + lastName);
 
-        }
-        else {
+        } else {
             System.out.print("Search for author by last name: ");
             ArrayList<Entity> entityArrayList = Search.findMany("lastName", s.nextLine(), false, Author.class);
             System.out.println("Choose author from list: ");
@@ -43,25 +41,25 @@ public class AddBook {
                 } catch (NumberFormatException e) {
                     System.out.println("Try again. Enter a number from the list.");
                 }
-            } while (choice < entityArrayList.size()-1 || choice > entityArrayList.size());
+            } while (choice < entityArrayList.size() - 1 || choice > entityArrayList.size());
 
             a = (Author) entityArrayList.get(choice);
         }
-            System.out.print("Enter title: ");
-            String title = s.nextLine();
-            System.out.print("Enter genre: ");
-            String genre = s.nextLine();
-            System.out.print("Enter year published: ");
-            String year  = s.nextLine();
-            System.out.print("Enter ISBN: ");
-            String ISBN = s.nextLine();
+        System.out.print("Enter title: ");
+        String title = s.nextLine();
+        System.out.print("Enter genre: ");
+        String genre = s.nextLine();
+        System.out.print("Enter year published: ");
+        String year = s.nextLine();
+        System.out.print("Enter ISBN: ");
+        String ISBN = s.nextLine();
 
-            a.setBibliography(a.getBibliography().concat(" "+ISBN));
-            a.updatePath();
-            com.company.db.Database.save(a);
-            Book b = new Book(ISBN,ISBN,title,a.getAuthorID(),genre,year);
-            com.company.db.Database.save(b);
-            System.out.println("Well done. Book added.");
+        a.setBibliography(a.getBibliography().concat(" " + ISBN));
+        a.updatePath();
+        com.company.db.Database.save(a);
+        Book b = new Book(ISBN, ISBN, title, a.getAuthorID(), genre, year);
+        com.company.db.Database.save(b);
+        System.out.println("Well done. Book added.");
 
 
     }

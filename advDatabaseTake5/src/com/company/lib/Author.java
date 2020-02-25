@@ -7,7 +7,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class Author implements Entity {
     private String authorID;
@@ -22,7 +21,7 @@ public class Author implements Entity {
         this.firstName = "no first name";
         this.lastName = "no last name";
         this.bibliography = "no bibliography";
-        this.path = Paths.get(this.authorID+".txt");
+        this.path = Paths.get(this.authorID + ".txt");
     }
 
     public Author(List<String> s) {
@@ -30,14 +29,14 @@ public class Author implements Entity {
         this.firstName = s.get(1).trim();
         this.lastName = s.get(2).trim();
         this.bibliography = s.get(3).trim();
-        this.path = Paths.get(this.authorID+".txt");
+        this.path = Paths.get(this.authorID + ".txt");
     }
 
     public Author(String authorID, String firstName, String lastName) {
         this.authorID = authorID;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.path = Paths.get(this.authorID+".txt");
+        this.path = Paths.get(this.authorID + ".txt");
     }
 
     public String getAuthorID() {
@@ -73,9 +72,9 @@ public class Author implements Entity {
     }
 
 
-    public String toString(){
-        return authorID+"\n"+firstName+"\n"+lastName+
-                "\n"+bibliography+"\n"+path;
+    public String toString() {
+        return authorID + "\n" + firstName + "\n" + lastName +
+                "\n" + bibliography + "\n" + path;
     }
 
     @Override
@@ -88,18 +87,18 @@ public class Author implements Entity {
     }
 
     public void updatePath() {
-        this.path = Path.of(this.authorID+".txt");
+        this.path = Path.of(this.authorID + ".txt");
     }
 
-    public String toPrettyString(){
+    public String toPrettyString() {
         //get authorName
         String bibliography = "";
-        ArrayList<Entity> a = Search.findMany("authorID",authorID,true,Book.class);
-        for (Entity ent : a){
-            bibliography = bibliography.concat(((Book) ent).getTitle()+"("+((Book) ent).getYear()+")\n");
+        ArrayList<Entity> a = Search.findMany("authorID", authorID, true, Book.class);
+        for (Entity ent : a) {
+            bibliography = bibliography.concat(((Book) ent).getTitle() + "(" + ((Book) ent).getYear() + ")\n");
         }
 
-        return String.format("~~~~~~~~~~~~~~%nName: %s %s%nBibliography: %n%s~~~~~~~~~~~~~~",firstName,lastName,bibliography);
+        return String.format("~~~~~~~~~~~~~~%nName: %s %s%nBibliography: %n%s~~~~~~~~~~~~~~", firstName, lastName, bibliography);
     }
 
 }
