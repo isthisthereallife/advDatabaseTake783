@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="messed with search">
-      <change afterPath="$PROJECT_DIR$/src/com/company/dataGenerator/DataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/db/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Search.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/lib/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/AddBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/lib/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/lib/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/lib/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/lib/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/lib/SearchMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/SearchMenu.java" afterDir="false" />
+    <list default="true" id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/advDatabaseTake5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/db/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/db/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/db/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/LibraryMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advDatabaseKraken/advDatabaseTake5/src/com/company/lib/SearchMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
@@ -288,10 +297,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582538050282" />
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582279046252">
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582656808803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582279046252" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582656808803" />
     <state x="682" y="234" key="git4idea.branch.GitSmartOperationDialog" timestamp="1582643304186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
