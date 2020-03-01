@@ -26,7 +26,7 @@ public class AddBook {
             lastName = s.nextLine();
             a.setFirstName(firstName);
             a.setLastName(lastName);
-            a.setAuthorID(firstName + lastName);
+            a.setID(firstName + lastName);
 
         } else {
             do {
@@ -48,14 +48,14 @@ public class AddBook {
                             s.nextLine();
                             System.out.println("Try again. Enter a number from the list.");
                         }
-                    } while (choice < 0 || choice > entityArrayList.size()-1);
+                    } while (choice < 0 || choice > entityArrayList.size() - 1);
 
 
                     a = (Author) entityArrayList.get(choice);
                     foundAuthor = true;
                 } else System.out.println("None. Try again.\n~~~~~~~~~~~~~~");
 
-            }while(!foundAuthor);
+            } while (!foundAuthor);
         }
         System.out.print("Enter title: ");
         String title = s.nextLine();
@@ -68,9 +68,9 @@ public class AddBook {
 
         a.setBibliography(a.getBibliography().concat(" " + ISBN));
         a.updatePath();
-        com.company.db.Database.save(a);
-        Book b = new Book(ISBN, ISBN, title, a.getAuthorID(), genre, year);
-        com.company.db.Database.save(b);
+        com.company.db.Database.getInstance().save(a);
+        Book b = new Book(ISBN, ISBN, title, a.getID(), genre, year);
+        com.company.db.Database.getInstance().save(b);
         System.out.println("Well done. Book added.");
 
 

@@ -9,7 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Author implements Entity {
-    private String authorID;
+    @NotNull
+    private String ID;
     private String firstName;
     private String lastName;
     private String bibliography;
@@ -17,34 +18,34 @@ public class Author implements Entity {
 
 
     public Author() {
-        this.authorID = "no id";
+        this.ID = "no id";
         this.firstName = "no first name";
         this.lastName = "no last name";
-        this.bibliography = "no bibliography";
-        this.path = Paths.get(this.authorID + ".txt");
+        this.bibliography = "";
+        this.path = Paths.get(this.ID + ".txt");
     }
 
     public Author(List<String> s) {
-        this.authorID = s.get(0).trim();
+        this.ID = s.get(0).trim();
         this.firstName = s.get(1).trim();
         this.lastName = s.get(2).trim();
         this.bibliography = s.get(3).trim();
-        this.path = Paths.get(this.authorID + ".txt");
+        this.path = Paths.get(this.ID + ".txt");
     }
 
-    public Author(String authorID, String firstName, String lastName) {
-        this.authorID = authorID;
+    public Author(String ID, String firstName, String lastName) {
+        this.ID = ID;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.path = Paths.get(this.authorID + ".txt");
+        this.path = Paths.get(this.ID + ".txt");
     }
 
-    public String getAuthorID() {
-        return authorID;
+    public String getID() {
+        return ID;
     }
 
-    public void setAuthorID(String authorID) {
-        this.authorID = authorID;
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
     public String getFirstName() {
@@ -73,7 +74,7 @@ public class Author implements Entity {
 
 
     public String toString() {
-        return authorID + "\n" + firstName + "\n" + lastName +
+        return ID + "\n" + firstName + "\n" + lastName +
                 "\n" + bibliography + "\n" + path;
     }
 
@@ -87,18 +88,16 @@ public class Author implements Entity {
     }
 
     public void updatePath() {
-        this.path = Path.of(this.authorID + ".txt");
+        this.path = Path.of(this.ID + ".txt");
     }
 
     public String toPrettyString() {
-        //get authorName
         String bibliography = "";
-        ArrayList<Entity> a = Search.findMany("authorID", authorID, true, Book.class);
+        ArrayList<Entity> a = Search.findMany("authorID", ID, true, Book.class);
         for (Entity ent : a) {
-            bibliography = bibliography.concat(((Book) ent).getTitle() + "(" + ((Book) ent).getYear() + ")\n");
+            bibliography = bibliography.concat(((Book) ent).getTitle() + " (" + ((Book) ent).getYear() + ")\n");
         }
 
         return String.format("~~~~~~~~~~~~~~%nName: %s %s%nBibliography: %n%s~~~~~~~~~~~~~~", firstName, lastName, bibliography);
     }
-
 }

@@ -13,15 +13,15 @@ import java.util.regex.Pattern;
 
 public abstract class Search {
 
-    public static ArrayList<Entity> findMany(String key, String val, boolean literalSearch, Class klass) {
+    public static ArrayList<Entity> findMany(String key, String val, boolean equalsSearch, Class klass) {
         ArrayList<Entity> objectsFound = new ArrayList<>();
         Object n = null;
         Method meth = null;
         ArrayList<ArrayList<String>> a = new ArrayList<>();
         try {
             Path path = (Path) klass.getDeclaredMethod("getPath").invoke(null);
-            for (File f : Database.getFilesFromPath(path)) {
-                a.add((ArrayList<String>) Database.makeListFromTxt(f.toPath()));
+            for (File f : Database.getInstance().getFilesFromPath(path)) {
+                a.add((ArrayList<String>) Database.getInstance().makeListFromTxt(f.toPath()));
             }
         } catch (Exception e) {
             System.out.println("*");
@@ -38,7 +38,7 @@ public abstract class Search {
                         objectsFound.add((Entity) n);
                     }
                 } else {
-                    if (!literalSearch) {
+                    if (!equalsSearch) {
                         if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
                             objectsFound.add((Entity) n);
                         }
@@ -54,7 +54,7 @@ public abstract class Search {
         return objectsFound;
     }
 
-    public static Optional<Entity> findOne(String key, String val, boolean literalSearch, Class klass) {
+    public static Optional<Entity> findOne(String key, String val, boolean equalsSearch, Class klass) {
         Object n = null;
         Method meth = null;
         Path path = null;
@@ -62,8 +62,8 @@ public abstract class Search {
         try {
             path = (Path) klass.getDeclaredMethod("getPath").invoke(null);
 
-            for (File f : Database.getFilesFromPath(path)) {
-                a.add((ArrayList<String>) Database.makeListFromTxt(f.toPath()));
+            for (File f : Database.getInstance().getFilesFromPath(path)) {
+                a.add((ArrayList<String>) Database.getInstance().makeListFromTxt(f.toPath()));
             }
         } catch (IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
             System.out.println("*");
@@ -81,7 +81,7 @@ public abstract class Search {
                         return Optional.of((Entity) n);
                     }
                 } else {
-                    if (!literalSearch) {
+                    if (!equalsSearch) {
                         if (Pattern.compile(val, Pattern.CASE_INSENSITIVE).matcher(String.valueOf(meth.invoke(n))).find()) {
                             return Optional.of((Entity) n);
                         }

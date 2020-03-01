@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e803b0d5-4f47-47f3-bf74-33962afd96ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../databaseSISTAVERSIONEN/databaseSISTAVERSIONEN.iml" afterDir="false" />
+    <list default="true" id="e803b0d5-4f47-47f3-bf74-33962afd96ce" name="Default Changelist" comment="what the fuck is going on">
+      <change afterPath="$PROJECT_DIR$/src/com/company/db/DiskOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/db/GetFromPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/lib/NotNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../maxOmuppgift/maxOmuppgift.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/dataGenerator/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/dataGenerator/DataFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/db/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/db/Search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/AddBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/LibraryMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/LibraryMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/lib/SearchMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/lib/SearchMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,17 +26,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="master" />
+        <entry key="$PROJECT_DIR$/.." value="release/v1.0" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -44,27 +57,30 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../advDatabaseKraken" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.company" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5\databases\library\books" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5\mock_data" />
       <recent name="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\isthi\Documents\Skola\Git\Projects\advDatabaseTake5\databases\library\books" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.lib.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="advDatabaseTake5" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -98,7 +114,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4160769a-fe25-439f-9ef6-c8ef391d3542" name="Default Changelist" comment="" />
+      <changelist id="e803b0d5-4f47-47f3-bf74-33962afd96ce" name="Default Changelist" comment="" />
       <created>1582263695727</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -238,17 +254,18 @@
     <MESSAGE value="messed with search" />
     <MESSAGE value="deleted master, renamed branch to master" />
     <MESSAGE value="addBook()" />
-    <option name="LAST_COMMIT_MESSAGE" value="addBook()" />
+    <MESSAGE value="what the fuck is going on" />
+    <option name="LAST_COMMIT_MESSAGE" value="what the fuck is going on" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582279202193">
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583080229679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582279202193" />
-    <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1582301841553">
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583080229679" />
+    <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser" timestamp="1583081177285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582301841553" />
+    <state x="285" y="208" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1583081177285" />
     <state x="690" y="268" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1582572192852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -257,10 +274,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="169" key="#javaee-api-8.0-javadoc.jar/0.0.1920.1040@0.0.1920.1040" timestamp="1582271038255" />
-    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1582658528198">
+    <state x="546" y="112" key="CommitChangelistDialog2" timestamp="1583084251990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582658528198" />
+    <state x="546" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583084251990" />
     <state x="345" y="266" key="FileChooserDialogImpl" timestamp="1582623464579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -269,22 +286,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="397" width="329" height="245" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582658744615" />
-    <state width="1877" height="357" key="GridCell.Tab.0.bottom" timestamp="1582658199286">
+    <state width="1877" height="367" key="GridCell.Tab.0.bottom" timestamp="1583084772126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="357" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582658199286" />
-    <state width="1877" height="357" key="GridCell.Tab.0.center" timestamp="1582658199286">
+    <state width="1877" height="367" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583084772126" />
+    <state width="1877" height="367" key="GridCell.Tab.0.center" timestamp="1583084772126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="357" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582658199286" />
-    <state width="1877" height="357" key="GridCell.Tab.0.left" timestamp="1582658199286">
+    <state width="1877" height="367" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583084772126" />
+    <state width="1877" height="367" key="GridCell.Tab.0.left" timestamp="1583084772126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="357" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582658199286" />
-    <state width="1877" height="357" key="GridCell.Tab.0.right" timestamp="1582658199286">
+    <state width="1877" height="367" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583084772126" />
+    <state width="1877" height="367" key="GridCell.Tab.0.right" timestamp="1583084772126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="357" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582658199286" />
+    <state width="1877" height="367" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583084772126" />
     <state x="653" y="232" key="RollbackChangesDialog" timestamp="1582278989122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -293,6 +310,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="242" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582658568253" />
+    <state x="664" y="414" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582796454611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="414" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1582796454611" />
     <state x="484" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582538050282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -305,10 +326,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="682" y="234" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582643304186" />
-    <state x="342" y="141" key="new project wizard" timestamp="1582658903114">
+    <state x="342" y="141" key="new project wizard" timestamp="1582806390738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="141" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1582658903114" />
+    <state x="342" y="141" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1582806390738" />
     <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1582299184224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -317,29 +338,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="666" y="149" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582280312034" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1582635131453">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1582796433725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582635131453" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582641732551">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582796433725" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583079605571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582641732551" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/lib/AddBook.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/lib/AddBook.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583079605571" />
   </component>
 </project>

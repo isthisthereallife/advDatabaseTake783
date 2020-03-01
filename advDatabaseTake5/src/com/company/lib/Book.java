@@ -13,7 +13,8 @@ import java.util.Optional;
 
 
 public class Book implements Entity {
-    private String bookID;
+    @NotNull
+    private String ID;
     private String ISBN;
     private String title;
     private String authorID;
@@ -25,48 +26,56 @@ public class Book implements Entity {
 
 
     public Book() {
-        this.bookID = "no id";
+        this.ID = "no ID";
         this.ISBN = "no isbn";
         this.title = "no title";
         this.authorID = "no author";
         this.genre = "no genre";
         this.year = "no year";
-        this.path = Paths.get(this.bookID + ".txt");
+        this.path = Paths.get(this.ID + ".txt");
         this.dateTimeCreated = LocalDateTime.now();
         this.dateTimeAccessed = LocalDateTime.now();
     }
 
     public Book(List<String> s) {
-        this.bookID = s.get(0).trim();
+        this.ID = s.get(0).trim();
         this.ISBN = s.get(1).trim();
         this.title = s.get(2).trim();
         this.authorID = s.get(3).trim();
         this.genre = s.get(4).trim();
         this.year = s.get(5).trim();
-        this.path = Paths.get(this.bookID + ".txt");
+        this.path = Paths.get(this.ID + ".txt");
         this.dateTimeCreated = LocalDateTime.parse(s.get(7).trim());
         this.dateTimeAccessed = LocalDateTime.now();
     }
 
 
-    public Book(String bookID, String ISBN, String title, String authorID, String genre, String year) {
-        this.bookID = bookID;
+    public Book(String ID, String ISBN, String title, String authorID, String genre, String year) {
+        this.ID = ID;
         this.ISBN = ISBN;
         this.title = title;
         this.authorID = authorID;
         this.genre = genre;
         this.year = year;
-        this.path = Paths.get(this.bookID + ".txt");
+        this.path = Paths.get(this.ID + ".txt");
         this.dateTimeCreated = LocalDateTime.now();
         this.dateTimeAccessed = LocalDateTime.now();
     }
 
-    public String getBookID() {
-        return bookID;
+    public String getID() {
+        return ID;
     }
 
-    public void setBookID(String bookID) {
-        this.bookID = bookID;
+    public String getAuthorID() {
+        return authorID;
+    }
+
+    public void setAuthorID(String authorID) {
+        this.authorID = authorID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
     public String getISBN() {
@@ -83,14 +92,6 @@ public class Book implements Entity {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getAuthorID() {
-        return authorID;
-    }
-
-    public void setAuthorID(String authorID) {
-        this.authorID = authorID;
     }
 
     public String getGenre() {
@@ -111,7 +112,7 @@ public class Book implements Entity {
 
 
     public String toString() {
-        return bookID + "\n" + ISBN + "\n" + title +
+        return ID + "\n" + ISBN + "\n" + title +
                 "\n" + authorID + "\n" + genre + "\n" + year + "\n" + path + "\n" + dateTimeCreated + "\n" + dateTimeAccessed;
     }
 
@@ -129,13 +130,13 @@ public class Book implements Entity {
     }
 
     public static Path getPath() {
-        return Path.of(Library.path + "/books");
+        return Library.path.resolve(Book.class.getSimpleName().substring(0, 1).toLowerCase().concat(Book.class.getSimpleName().substring(1) + "s"));
     }
 
     public String toPrettyString() {
 
         String authorName = "unknown";
-        Optional<Entity> ent = Search.findOne("authorID", authorID, true, Author.class);
+        Optional<Entity> ent = Search.findOne("ID", authorID, true, Author.class);
         if (ent.isPresent()) {
             Author a = (Author) ent.get();
             authorName = a.getFirstName() + " " + a.getLastName();

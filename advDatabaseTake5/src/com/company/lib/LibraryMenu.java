@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class LibraryMenu {
     LibraryMenu() {
         String whatDo;
-        System.out.println("~~~This is library~~~\n");
+        System.out.println("\n~~~This is library~~~\n");
         do {
             System.out.println("What do?\n1. Search\n2. View all books\n3. Add Book\n0. Quit");
             whatDo = new Scanner(System.in).nextLine();
@@ -16,7 +16,7 @@ public class LibraryMenu {
                     new SearchMenu();
                     break;
                 case "2":
-                    Search.printResult(Search.findMany("bookID", "", false, Book.class));
+                    Search.printResult(Search.findMany("ID", "", false, Book.class));
                     break;
                 case "3":
                     new AddBook();

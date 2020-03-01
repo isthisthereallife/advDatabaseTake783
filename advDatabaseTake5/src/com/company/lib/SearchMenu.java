@@ -42,7 +42,7 @@ public class SearchMenu {
     void diySearch() {
         System.out.print("Search what field? : ");
         String field = new Scanner(System.in).nextLine();
-        if (field.equalsIgnoreCase("author")) field = "authorID";
+        if (field.equalsIgnoreCase("author")) field = "ID";
 
         System.out.print("Search where? ");
         Class c = null;
